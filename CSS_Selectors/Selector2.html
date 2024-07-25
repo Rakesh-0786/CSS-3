@@ -1,0 +1,80 @@
+<!-- /* Grouping of selectors in which multiple elements are selected */
+
+h1,h2, h3{
+    background-color: #128a8d;
+} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+
+        /* grouping selectors */
+        h1,h2,h3{
+            background-color: #0ac074;
+        }
+
+        /* combination selectors */
+
+        ul li {
+            background-color: #15d264;
+        }
+
+        /* child selectors;this header only checks the direct child */
+        header > a {
+            background-color: #1b9780;
+        }
+
+        /* General direct Sibling Selectors */
+        /* img ~ p {
+            background-color: #9a17ae;
+        }
+ */
+        /* just adjacent Sibling selectors */
+         
+        img + p{
+            background-color: #c212b9;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <h1>Hey This Side from Rakesh Kumar</h1>
+    <h2 class="bg-orange">Lorem ipsum dolor sit.</h2>
+    <h3 class="bg-orange" id="bg-green">Lorem ipsum dolor sit amet.</h3>
+
+     <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+     </ul>
+     <li>Four</li>
+
+     <header>
+        <a href="#">Google</a>
+
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <a href="#">Logo</a>
+                </ul>
+            </nav>
+            <a href="#">Bing</a>
+     </header>
+
+     <div>
+        <img src="#" alt="">
+            <p>Change me</p>
+            <p>Change me too</p>
+            <div>
+                <p>change also</p>
+            </div>
+        </img>
+     </div>
+</body>
+</html>

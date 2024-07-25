@@ -1,0 +1,72 @@
+/* <!-- Cascading Order ->
+ Cascading order is a concept primarily used in web development, particularly when dealing with Cascading Style Sheets (CSS). It determines how styles are applied to HTML elements on a webpage. The cascading order refers to the priority rules that determine which style rules apply when multiple styles could apply to a particular element. Here's a breakdown of how it works:
+
+1. Importance
+CSS rules can be marked as important using the !important keyword, which gives them the highest priority. If two conflicting rules have the same specificity, the one marked with !important will be applied.
+
+2. Specificity
+Specificity is a measure of how specific a selector is. More specific selectors take precedence over less specific ones. The specificity is calculated based on the number and types of selectors used:
+
+Inline styles (e.g., style="color: blue;" in HTML) have the highest specificity.
+IDs (e.g., #header) have a high specificity value.
+Classes, pseudo-classes, and attribute selectors (e.g., .button, :hover, [type="text"]) have medium specificity.
+Element selectors (e.g., div, h1) and pseudo-elements (e.g., ::before, ::after) have the lowest specificity.
+Specificity is calculated using a four-part value system: (a, b, c, d), where:
+
+a: Inline styles (1 or 0)
+b: Number of ID selectors
+c: Number of class, attribute, and pseudo-class selectors
+d: Number of element and pseudo-element selectors
+For example:
+
+#header .menu li a has a specificity of (0, 1, 2, 2)
+div a has a specificity of (0, 0, 0, 2)
+3. Source Order
+When two rules have the same specificity, the rule that appears later in the CSS or HTML document takes precedence. This is known as the "last rule wins" principle.
+
+4. Origin
+CSS styles can come from different origins, and the order of these origins can affect which styles are applied:
+
+Author styles: Styles defined by the developer in the CSS files or inline styles.
+User styles: Styles set by the user in their browser settings.
+User-agent styles: Default styles provided by the browser itself.
+The cascade order generally prioritizes author styles over user styles and user styles over user-agent styles.
+
+Example
+Consider the following CSS:
+
+css
+Copy code
+/* Example CSS */
+div {
+  color: black;
+}
+
+#main {
+  color: red;
+}
+
+.main-header {
+  color: blue !important;
+}
+
+div.main-header {
+  color: green;
+}
+Application
+#main - This ID selector has a specificity of (0, 1, 0, 0), making it more specific than the div selector.
+.main-header - This class selector has a specificity of (0, 0, 1, 0), but with !important, it overrides the other selectors.
+div.main-header - The combination selector has a specificity of (0, 0, 1, 1), making it more specific than just .main-header without !important.
+Here, .main-header with !important will apply first due to its high priority.
+
+Conclusion
+Understanding cascading order is crucial for web developers as it helps manage how styles are applied across a website. Properly using specificity and the cascade can lead to more maintainable and predictable CSS.
+
+
+CSS Specificity:-
+Inline 
+ID
+Class 
+Element
+
+  --> 

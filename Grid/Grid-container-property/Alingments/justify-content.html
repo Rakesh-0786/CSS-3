@@ -1,0 +1,43 @@
+<!-- Justify-content:-
+ The justify-content property in CSS is used to horizontal align  grid
+ items within a grid container.It controls how the grid tracks(the columns or rows)
+ are aligned along the horizontal axis of the grid container. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID-Alignemnts</title>
+    <style>
+        .container {
+            height: 200px;
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(2, 50px);
+            /* grid-gap:20px 30px; */
+            border:2px solid black;
+            /* justify-content: end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+        }
+        .item{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    
+</body>
+</html>

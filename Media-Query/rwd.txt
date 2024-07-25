@@ -1,0 +1,28 @@
+rwd is responsive web design
+
+
+What is responsive web design(RWD)?
+
+Advantages of RMD:
+Improved User Experience 
+Increase Mobile Traffic
+Cost and Time Efficiency
+Search Engine Optimization(SEO) Benefits
+
+Ways to implement responsive Web design
+responsive Layouts
+responsive images
+Media Query
+responsive typography
+The Viewport meta tag
+
+
+Media:
+all
+screen
+print 
+speech
+
+Operators
+and
+or

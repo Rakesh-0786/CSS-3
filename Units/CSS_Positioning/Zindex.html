@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para{
+            overflow:hidden;
+            border: 2px solid black;
+            background-color: #0e9458;
+            padding: 20px;
+            height: 100px;
+        }
+        .container {
+            position: relative;
+        }
+        .box{
+            position:absolute;
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            color: slateblue;
+        }
+        .box_1{
+            /* left: 50px;
+            top: 50px; */
+
+            background-color: red;
+            z-index: 999;
+        }
+        .box_2{
+            left: 50px;
+            top: 50px;
+            background-color: green;
+            z-index: 22;
+        }
+        .box_3{
+            left: 100px;
+            top: 100px;
+            background-color: blue;
+            z-index: 3;
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- overflow -->
+    <p class="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, molestiae asperiores delectus dolor eos earum provident temporibus recusandae libero quidem nobis eaque pariatur, tempora ut molestias distinctio natus repellendus hic architecto optio? Dolor assumenda quis culpa expedita commodi voluptatum iste saepe necessitatibus mollitia, labore aliquam adipisci error consequuntur sed vitae quae eligendi sapiente sint sequi quibusdam, ut quidem explicabo? Quod fugit magni, perferendis alias, est eligendi nobis architecto aperiam, quam ad fugiat. Laborum maxime, nam, possimus facilis sequi provident dolor alias consequatur, blanditiis ad hic necessitatibus iure veniam laudantium optio placeat at qui! Molestiae et placeat excepturi quisquam odio impedit, tempora autem. Totam doloribus accusamus odio esse voluptate praesentium dignissimos veritatis, laborum, provident non quos libero dolore aspernatur, labore earum? Molestiae perferendis quaerat laborum modi, quasi voluptate aliquam autem distinctio sed excepturi enim, tenetur tempora, quod magnam voluptatum incidunt quia mollitia voluptas. Ratione explicabo officiis pariatur ullam voluptatem. Voluptates ut praesentium accusamus ipsa facilis. Beatae, modi distinctio voluptates repellat explicabo dolor animi quo libero obcaecati nemo! Officia cupiditate magnam illo, culpa accusantium quae dignissimos quo expedita modi porro placeat pariatur facilis, dolorem non voluptates molestiae alias deserunt error. Adipisci labore eligendi saepe rem maiores id minima, quae, placeat, aut ducimus quod voluptas accusamus sed necessitatibus molestiae sunt! Voluptatibus, non a natus sit voluptate fugiat placeat ipsa fugit tenetur veritatis quidem provident explicabo sunt ab commodi reprehenderit soluta quasi. Odit odio vel reprehenderit corporis doloremque neque ut accusamus ducimus ipsam commodi qui expedita architecto quaerat voluptatem voluptate, pariatur optio natus quod est omnis. Quam eveniet quidem autem sapiente, amet quia in velit nostrum eius. Id perferendis fuga accusamus ad atque repellendus placeat blanditiis dolorem ipsum omnis dicta ipsam, sequi iusto molestiae perspiciatis? Quam odio commodi tempora? Officiis itaque minus provident aperiam saepe aliquid asperiores blanditiis aspernatur impedit, magni dolor nobis in?Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quis possimus voluptate necessitatibus iusto quibusdam tempora suscipit blanditiis quisquam, deleniti consectetur illo consequuntur nam, omnis dolore. Excepturi autem explicabo nam natus facilis culpa sint doloremque, assumenda, nemo eaque debitis hic ad vero cupiditate expedita sed eum esse, velit facere laboriosam repudiandae voluptate at! Sunt ab magnam iure dolorum quis numquam ad reiciendis architecto. Rerum nihil nesciunt similique voluptatem enim aut quia ab illum facere earum aliquid culpa dolorum, reiciendis quasi sunt. Veniam sunt atque ea tenetur accusantium, voluptatum enim sed asperiores numquam quod? Consequatur natus illo est provident odit asperiores!</p>
+     
+     <!-- Zindex -->
+      <div class="conatainer">
+        <div class="box box_1">z-index 1</div>
+        <div class="box box_2">z-index 2</div>
+        <div class="box box_3">z-index 3</div>
+      </div>
+
+</body>
+</html>

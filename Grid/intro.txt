@@ -1,0 +1,18 @@
+Grid-Introduction:-
+CSS Grid is a powerful two-dimensional layout system that follows you
+to create complex and flexible layouts with rows and columns.
+
+Grid container properties:-
+
+1.Grid Conatainer 
+2.Grid Item
+
+1.Grid-Container:-
+Layouting --> Grid-template-row,columns grid-area
+
+Spacing --> grid-gap column, rows and both
+Alignment --> justify-content
+
+2.Grid-Item
+Layouting -->
+Spacing -->

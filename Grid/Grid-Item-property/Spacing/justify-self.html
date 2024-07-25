@@ -1,0 +1,73 @@
+<!--Justify-self properties control the 
+alignment of a grid item within its grid cell along
+the horizontal and vertical axes, respecitvely.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 350px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: 20px;
+        }
+        .item{
+            border: 2px solid black;
+        }
+        .item1{
+            justify-self: center;
+            background-color: #09b19e;            font-weight: bolder;
+            font-weight: bolder;
+
+        }
+        .item2{
+            justify-self: start;
+            background-color: #0b0d8c;
+            font-weight: bolder;
+
+        }
+        .item3{
+            justify-self: end;
+            background-color: #4fb109;
+            font-weight: bolder;
+
+        }
+        .item4{
+            justify-self:left ;
+            background-color: #700b9f;
+            font-weight: bolder;
+
+        }
+        .item5{
+            justify-self:last baseline;
+            background-color: #800b55;
+            font-weight: bolder;
+
+        }
+        .item6{
+            justify-self: flex-end;
+            background-color: #acaf0c;
+            font-weight: bolder;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item1</div>
+        <div class="item item2">Item2</div>
+        <div class="item item3">Item3</div>
+        <div class="item item4">Item4</div>
+        <div class="item item5">Item5</div>
+        <div class="item item6">Item6</div>
+
+    </div>
+
+</body>
+</html>

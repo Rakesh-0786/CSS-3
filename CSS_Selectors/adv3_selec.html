@@ -1,0 +1,42 @@
+<!-- Pseudo-Elements
+A pseudo-element allows you to style a specific part of an element, such as the first line of a paragraph or the first letter. Pseudo-elements are denoted by a double colon :: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element Example</title>
+    <style>
+        /* Add a quote before each blockquote */
+        blockquote::before {
+            content: "“";
+            font-size: 2em;
+            color: gray;
+            vertical-align: middle;
+        }
+
+        /* Style the first letter of each paragraph */
+        p::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+            color: navy;
+        }
+
+        /* Add a decorative line after the header */
+        h1::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elements in Action</h1>
+    <p>This is an example paragraph demonstrating the use of pseudo-elements in CSS.</p>
+    <blockquote>CSS pseudo-elements are a powerful way to style your web content.</blockquote>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- display none and opacity=0 is not equla they work equal like they are used for removing the elements 
+ but in opacity has one limitation it consume area space
+ on the otherhand the display none is not consuming the area. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display layouting</title>
+    <style>
+        h3,p,li {
+            background-color: rgb(125, 6, 6);
+            color: aliceblue;
+            border: 5px solid rgb(147, 147, 5);
+            padding:10px ;
+            /* padding-inline-start: 10px; */
+        }
+        .item {
+            display: none;
+            background-color: rgb(125, 6, 6);
+            color: aliceblue;
+            border: 5px solid rgb(147, 147, 5);
+            padding:10px ;
+        }
+        .item2{
+            height: 200px;
+        }
+        img{
+            /* opacity: 0; //it consume the area */
+            /* display: none;  it does not consume the area*/
+            visibility: hidden; //it also consume the area
+        }
+    </style>
+</head>
+<body>
+    <h3>Normal layout</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis laboriosam fugiat ab voluptatem consequuntur quasi quod qui voluptatum minima quia nesciunt ducimus mollitia cupiditate nemo consequatur velit neque voluptas libero, quo expedita. Repellat eius praesentium eveniet alias ullam sed asperiores?</p>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+     
+    <div>
+    <div class="item1 item">Item 1</div>
+    <div class="item2 item">Item 2</div>
+    <div class="item3 item">Item 3</div>
+     </div>
+
+     <h1>Lorem ipsum dolor sit amet.</h1>
+     <p>Text before image</p>
+     <img src="/WhatsApp Image 2024-07-19 at 01.43.07_8c7c1fa5.jpg" alt="">
+     <p>Text after image</p>
+
+    
+</body>
+</html>

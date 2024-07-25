@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Class Examples</title>
+    <style>
+        /* :nth-child(n) - Selects the nth child element of its parent */
+        li:nth-child(2) {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* :nth-of-type(n) - Selects the nth element of a specific type among its siblings */
+        p:nth-of-type(3) {
+            font-size: larger;
+            color: blue;
+        }
+
+        /* :checked - Selects checked elements (checkboxes or radio buttons) */
+        input[type="checkbox"]:checked {
+            outline: 2px solid red;
+            background-color: lightyellow;
+        }
+
+        /* :disabled - Selects disabled elements */
+        button:disabled {
+            background-color: grey;
+            color: rgb(16, 13, 13);
+        }
+
+        /* :not(selector) - Selects elements that do not match the given selector */
+        p:not(.special) {
+            color: black;
+        }
+
+        /* Additional styles for better visualization */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .example {
+            margin-bottom: 20px;
+        }
+
+        .example h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="example">
+        <h2>:nth-child(n) Example</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2 (This will be green and bold)</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <div class="example">
+        <h2>:nth-of-type(n) Example</h2>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3 (This will be larger and blue)</p>
+        <p>Paragraph 4</p>
+    </div>
+
+    <div class="example">
+        <h2>:checked Example</h2>
+        <form>
+            <label>
+                <input type="checkbox" name="option1" checked> Option 1 (Checked)
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="option2"> Option 2
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="option3"> Option 3
+            </label>
+        </form>
+    </div>
+
+    <div class="example">
+        <h2>:disabled Example</h2>
+        <button disabled>Disabled Button (Grey background)</button>
+        <button>Enabled Button</button>
+    </div>
+
+    <div class="example">
+        <h2>:not(selector) Example</h2>
+        <p>This paragraph is not special (Black text)</p>
+        <p class="special">This paragraph is special (Not selected by :not)</p>
+        <p>This paragraph is also not special (Black text)</p>
+    </div>
+</body>
+</html>

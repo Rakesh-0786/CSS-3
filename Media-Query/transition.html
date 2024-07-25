@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        a{
+            float:1;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid;
+            padding: 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            /* transition= property duration transition-timing-function */
+            transition: all 0.5s
+            ease-in;
+        }
+        a:hover , a:focus{
+            background-color: #fff;
+            color: #335ed1;
+        }
+        .elem{
+            height: 150px;
+            width: 150px;
+            background-color: #081fa3;
+            border-radius: 50%;
+            margin-top: 100px; 
+            margin-left: 100px;
+            transition: all 0.04s ease-in;
+        }
+        .elem:hover{
+            transform: scale(2);
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Princing</a>
+        <a href="#">Events</a>
+    </nav>
+    <div class="elem"></div>
+    
+</body>
+</html>

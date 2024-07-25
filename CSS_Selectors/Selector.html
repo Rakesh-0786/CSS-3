@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* universal selector (*) */
+        * {
+            margin:0;
+            padding-top:0;
+        }
+
+    /* type selector in which we selects the specific tags  */
+    h1 {
+        background-color: #25af3c;
+    }
+
+    /* class selectors */
+    .bg-orange {
+        background-color: #2bb9a4ad;
+    }
+
+    /* id selector */
+
+    #bg-green {
+        font-style: calc();
+        background-color: #bd2d2d;
+
+    }
+    /* attribut base selectors in this we select the attribute elements in squre bracket and if the multiple attributes are present with the same name then we can easily gives their value name */
+    a[target=_blank] {
+        background-color: #05a640;
+        color: aliceblue;
+
+    }
+
+
+    /* Grouping of selectors in which multiple elements are selected */
+
+    h1,h2, h3{
+        background-color: #128a8d;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Hey This Side from Rakesh Kumar</h1>
+    <h2 class="bg-orange">Lorem ipsum dolor sit.</h2>
+    <h3 class="bg-orange" id="bg-green">Lorem ipsum dolor sit amet.</h3>
+
+    <a target="_parent" href="https://pwskills.com">Pw SKILLS</a>
+    <a target="_blank"   href="https://inueron.ai">iNeuron</a>
+
+</body>
+</html>

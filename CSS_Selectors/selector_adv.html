@@ -1,0 +1,67 @@
+<!-- In CSS, pseudo-classes and pseudo-elements are special keywords
+  used to style specific parts of your web page or HTML elements
+   without needing to add additional HTML or JavaScript. 
+   They allow you to apply styles based on the state of an element,
+    its position in the document, or specific parts of elements. 
+    Let's break down these two concepts: -->
+  
+    <!-- A Pseudo-class are used to define the special state of 
+     an elements. for example, it can ve used to style an elements 
+     when it is hovered over, or to style the first child
+     element of its parents Pseudo-classes are denoted by 
+     colon ':'   -->
+
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Class Example</title>
+    <style>
+        /* Default styles for links */
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        /* Hover effect 
+        Styles an element when the mouse pointer is over it.*/
+        a:hover {
+            background-color: lightgray;
+        }
+
+        /* Active link
+         Styles an element when it is being activated (e.g., clicked on).*/
+        a:active {
+            background-color: darkgray;
+        }
+
+        /* Focused link
+        Styles an element when it has focus (e.g., when an input field is selected). */
+        a:focus {
+            outline: 2px solid blue;
+        }
+
+        /* First link special style
+        Selects the first child element of its parent. */
+        a:first-child {
+            color: red;
+        }
+
+        /* Last link special style */
+        a:last-child {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</body>
+</html>

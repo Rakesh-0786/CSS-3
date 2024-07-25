@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Grid-Properties</title>
+   <style>
+
+
+     .container {
+        display: grid;
+        height: 100vh;
+        /* we can also chang the size and dimensions */
+        grid-template-areas:
+        "header header header header"
+       " sidebar main main main "
+       " footer footer footer footer";
+     }
+     .header{
+        grid-area:header ;
+        border: 2px solid black;
+        background-color: #089b34;
+
+
+     }
+     .footer{
+        grid-area: footer;
+        border: 2px solid black;
+        background-color: #08969b;
+     }
+     .sidebar{
+        grid-area: sidebar;
+        border: 2px solid black;
+        background-color: #081c9b;
+     }
+     .main{
+        grid-area: main;
+        border: 2px solid black;
+        background-color: #9b0894;
+     }
+
+
+
+
+   </style>
+</head>
+<body>
+   <div class="container">
+    <div class="header">Header</div>
+    <div class="footer">Footer</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main">Main Content</div>
+   </div>
+   
+</body>
+</html>

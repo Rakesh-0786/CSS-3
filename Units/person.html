@@ -1,0 +1,51 @@
+<!-- In CSS, % (percent) and px (pixels) are units of measurement used to define the sizes of elements, their spacing, and other dimensions. -->
+<!-- Definition: A pixel is a fixed unit of measurement that corresponds to a single dot on a display screen.
+Usage: Pixels are commonly used for defining fixed dimensions, such as width, height, padding, margin, font-size, etc.
+Behavior: Since pixels are fixed units, they do not scale with the size of the viewport or parent elements. -->
+
+<!-- Percentages (%)
+Definition: A percentage is a relative unit of measurement that is based on the size of the parent element.
+Usage: Percentages are often used for responsive designs, allowing elements to scale relative to their containing elements.
+Behavior: The actual size of an element defined in percentages will vary depending on the size of the parent element. For example, if the parent element is 500px wide, a child element with width: 50% will be 250px wide.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            height: 50px;
+            width: 50px;
+            background-color: #be1616;
+        } */
+         .base {
+            background-color: #40076f;
+         }
+         .fifty-percent{
+            width: 50%;
+         }
+         .hundered-px {
+            width: 100px;
+         }
+         .box{
+            width: 250px;
+            border: 1px solid;
+
+         }
+
+        
+    </style>
+</head>
+<body>
+    <!-- <div></div> -->
+<div class="base fifty-percent">50%</div>
+<div class="base hundered-px">100px</div>
+
+<div class="box">
+    <div class="base fifty-percent">50%</div>
+    <div class="base hundered-px">100px</div>
+</div>
+</body>
+</html>

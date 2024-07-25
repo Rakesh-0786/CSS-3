@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Column-gap</title>
+    <style>
+         /* Grid-column-gap
+         grid-column-gap is a CSS property that defines the size of the gap or space between the 
+         columns of a grid. It is used to create space between the columns and make the grid more 
+         visully apealing and also for grid row
+         and for using both in  a single line then we can simply used the grid-gap  */
+        .container {
+            height: 200px;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 2,1fr;
+            /* grid-column-gap: 20px;
+            grid-row-gap: 20px; */
+            /* first is row and second is column */
+            grid-gap:20px 30px;
+            
+        }
+        .item {
+            background-color: #0c8a8c;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>

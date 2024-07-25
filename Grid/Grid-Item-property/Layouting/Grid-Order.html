@@ -1,0 +1,74 @@
+<!-- Order:-
+ The order property defines the order in which a grid item is displayed within its grid
+ container. The value can be a numeric value or the keyword auto. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 250px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: 20px;
+        }
+        .item{
+            border: 2px solid black;
+        }
+        .item1{
+            order: 1;
+            background-color: #09b19e;            font-weight: bolder;
+            font-weight: bolder;
+
+        }
+        .item2{
+            order: 6;
+            background-color: #0b0d8c;
+            font-weight: bolder;
+
+        }
+        .item3{
+            order: 3;
+            background-color: #4fb109;
+            font-weight: bolder;
+
+        }
+        .item4{
+            order: 4;
+            background-color: #700b9f;
+            font-weight: bolder;
+
+        }
+        .item5{
+            order: 5;
+            background-color: #800b55;
+            font-weight: bolder;
+
+        }
+        .item6{
+            order: 2;
+            background-color: #acaf0c;
+            font-weight: bolder;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item1</div>
+        <div class="item item2">Item2</div>
+        <div class="item item3">Item3</div>
+        <div class="item item4">Item4</div>
+        <div class="item item5">Item5</div>
+        <div class="item item6">Item6</div>
+
+    </div>
+
+</body>
+</html>

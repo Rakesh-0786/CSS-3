@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 150px;
+            width: 500px;
+            overflow: scroll;
+            /* background-color: #06a733; */
+            position: relative;
+        }
+        .box {
+            width:100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: #6c0f0f;
+            /* position: static;  it doesnot change anything  */
+            /* position: relative; */
+            /* position:fixed; */
+            /* position:absolute; */
+            position:sticky;
+            top: 20px;
+            left:50px;
+        }
+        .box2{
+            background-color: #0f6c1a;
+        }
+        .box3{
+            background-color: #0f2b6c;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</div>
+</body>
+</html>

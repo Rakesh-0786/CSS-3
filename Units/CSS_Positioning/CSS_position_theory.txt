@@ -1,0 +1,16 @@
+CSS layout
+
+Layout Techniques
+
+    Normal layout
+    Float layout
+    Flex Layout
+
+
+Positioning Techniques
+    
+    Static Positioning (bydefault)
+    Relative Positioning
+    Absolute Positioning
+    Fixed Positioning
+    Sticky Positioning

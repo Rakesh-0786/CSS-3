@@ -1,0 +1,53 @@
+<!-- The z-index property in CSS controls the vertical stacking order of elements that overlap. An element with a higher z-index will be in front of an element with a lower z-index. This property only works on elements that have a position value other than static (e.g., relative, absolute, fixed, or sticky). 
+ 
+Definition: The z-index property specifies the stack order of an element. An element with a higher stack order is in front of an element with a lower stack order.
+Usage: Typically used to control the layering of overlapping elements.
+Conditions: Only works on positioned elements (position: relative;, position: absolute;, position: fixed;, or position: sticky;).-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .box1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 1; /* Lower z-index */
+  }
+  
+  .box2 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    z-index: 2; /* Higher z-index */
+  }
+  .box3{
+    position:absolute;
+    top: 100px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(200, 19, 182);
+    z-index: 5; /* Higher z-index */
+
+  }
+</style>
+</head>
+<body>
+
+<div class="box1">Box 1</div>
+<div class="box2">Box 2</div>
+<div class="box3">Box 3</div>
+
+</body>
+</html>
+
+
+

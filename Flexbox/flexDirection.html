@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+    <style>
+        /* flex direction lie on left to right in web
+        and in mobile the flex direction is top to bottum */
+        /* Flex is one directional */
+        .container {
+            display: flex;
+            /* flex-direction: row; */
+            flex-direction: column-reverse;
+            border: 1px solid black;
+            color: aliceblue;
+        }
+        .item{
+            width:50px;
+            height: 50px;
+            background-color: blue;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Direction</h1>
+    <div class="container">
+    <div class="item 1">1</div>
+    <div class="item 2">2</div>
+    <div class="item 3">3</div>
+    <div class="item 4">4</div>
+</div>
+    
+</body>
+</html>

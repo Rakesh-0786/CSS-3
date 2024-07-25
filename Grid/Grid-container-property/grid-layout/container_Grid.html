@@ -1,0 +1,78 @@
+<!-- Introduction:-
+ A Grid container is an HTML element that defines a grid Layout.
+ To control the layout of the grid items within the container various CSS 
+ Properties can be applied to the container iteself.
+Now we will understand different grid container properties
+Below is sample HTML we will use in later slides
+<div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+</div>
+
+
+ 
+
+ 
+  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Properties</title>
+    <style>
+         /* //Grid container properties 
+
+         display
+ display property is set to grid to define the container as a grid container. 
+            
+            //grid-template-columns:
+            grid-template-columns property specifies the number and size of columns in 
+            the grid.You can use values like pixels, percentages, or fraction to define the column wodths.
+
+ */
+      .container {
+        height: 400px;
+        display: grid;
+        /* grid-template-columns: 100px 150px 200px; */
+        /* another method i.e Repeat(3,1fr) */
+        grid-template-columns: repeat(3,1fr);
+        /* grid-template-columns: auto auto auto ; */
+        grid-template-rows: 100px 200px  ;
+
+
+        /* grid-templates-areas
+        grid-templates-areas property defines named grid areas within the grid container.
+        Each area can be assigned a name and then refereced in the css rules for the grid items. */
+        
+      }
+      .item{
+        background-color: #0e7f8e;
+        /* height: 20px; */
+        /* width: 20px; */
+        /* text-align: center; */
+        border: 2px solid black;
+      }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="item">1 HEY THIS IS RAKESH FROM THIS SIDE</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <!-- <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div> -->
+
+    </div>
+    
+ </body>
+ </html>

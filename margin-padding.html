@@ -1,0 +1,48 @@
+<!-- Margin
+Margin is the space outside the border of an element. It creates distance between the element and its surrounding elements or the edge of its container. Margins are used to push elements away from each other or from the edges of their containers.
+
+ey Differences Between Margin and Padding
+Feature	         Margin        	                         Padding
+Location:	Outside the border	                     Inside the border
+Purpose:	Creates space between elements	         Creates space within an element
+Collapsing:	Can collapse with other margins	         Does not collapse
+Impact on Size:	Does not affect the element size	 Increases the element’s size
+Shorthand:	margin (top, right, bottom, left)	     padding (top, right, bottom, left)
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Example</title>
+    <style>
+        .box {
+            margin: 20px; /* Sets margin of 20px on all sides */
+            background-color: lightblue;
+            padding: 20px; /* Sets padding of 20px on all sides */
+            border: 2px solid black;
+        }
+        .box2 {
+            margin-top: 30px; /* Top margin of 30px */
+            margin-bottom: 10px; /* Bottom margin of 10px */
+            margin-left: 20px; /* Left margin of 20px */
+            margin-right: 40px; /* Right margin of 40px */
+            background-color: lightcoral;
+            padding-top: 30px; /* Top padding of 30px */
+            padding-bottom: 10px; /* Bottom padding of 10px */
+            padding-left: 20px; /* Left padding of 20px */
+            padding-right: 40px; /* Right padding of 40px */
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Box with 20px margin</div>
+    <div class="box2">Box with different margins on each side</div>
+</body>
+</html>
